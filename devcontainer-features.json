@@ -18,6 +18,25 @@
 					"description": "Test"
 				}
 			}
+		},
+		{
+			"id": "jlink_tools",
+			"name": "Segger JLink tools",
+			"include": [
+				"ubuntu",
+				"debian"
+			],
+			"options": {
+				"version": {
+					"type": "string",
+					"default": "V766b_x86_64",
+					"proposals": [
+						"V766b_x86_64",
+						"V765e_x86_64"
+					],
+					"description": "JLink tools version"
+				}
+			}
 		}
 	]
 }
