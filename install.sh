@@ -35,6 +35,4 @@ if [ ! -z ${_BUILD_ARG_ZSH_STARSHIP} ]; then
 	chmod +x "/tmp/starship.sh"
 	/tmp/starship.sh -y
 
-	echo "eval \"$(starship init zsh)\"" > "~/.zshrc"
-
 fi
