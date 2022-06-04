@@ -37,6 +37,14 @@
 					"description": "JLink tools version"
 				}
 			}
+		},
+		{
+			"id": "zsh_starhip",
+			"name": "zsh + starship.rs",
+			"include": [
+				"ubuntu",
+				"debian"
+			]
 		}
 	]
 }

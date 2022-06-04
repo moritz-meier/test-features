@@ -23,3 +23,18 @@ if [ ! -z ${_BUILD_ARG_JLINK_TOOLS} ]; then
 	curl -s -X POST -d "accept_license_agreement=accepted&submit=Download+software" -o "/tmp/jlink.deb" "https://www.segger.com/downloads/jlink/JLink_Linux_$version.deb"
 	apt install -fy "/tmp/jlink.deb"
 fi
+
+if [ ! -z ${_BUILD_ARG_ZSH_STARSHIP} ]; then
+
+	echo "Installing zsh + starship.rs"
+
+	apt update -y && apt install -y zsh
+	usermod -s $(which zsh) $(whoami)
+
+	curl -s -o "/tmp/starship.sh" "https://starship.rs/install.sh"
+	chmod +x "/tmp/starship.sh"
+	/tmp/starship.sh -y
+
+	echo "eval \"$(starship init zsh)\"" > "~/.zshrc"
+
+fi
