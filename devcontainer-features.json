@@ -1,0 +1,23 @@
+{
+	"features": [
+		{
+			"id": "testfeature1",
+			"name": "Test Feature 1",
+			"include": [
+				"ubuntu",
+				"debian"
+			],
+			"options": {
+				"text": {
+					"type": "string",
+					"default": "Hello World, from testfeature1!!",
+					"proposals": [
+						"abc",
+						"xyz"
+					],
+					"description": "Test"
+				}
+			}
+		}
+	]
+}
