@@ -10,6 +10,6 @@ if [ ! -z ${_BUILD_ARG_TESTFEATURE1} ]; then
 
 	echo "Activating testfeature1"
 
-	text=${_BUILD_ARG_TESTFEATURE_TEXT:-undefined}
+	text=${_BUILD_ARG_TESTFEATURE1_TEXT:-undefined}
 	echo "$text" >> "/home/vscode/testfeature1.txt"
 fi
