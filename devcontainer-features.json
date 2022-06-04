@@ -39,7 +39,7 @@
 			}
 		},
 		{
-			"id": "zsh_starhip",
+			"id": "zsh_starship",
 			"name": "zsh + starship.rs",
 			"include": [
 				"ubuntu",
