@@ -22,8 +22,8 @@ if [ ! -z ${_BUILD_ARG_JLINK_TOOLS} ]; then
 	apt update -y && apt install -y curl
 	curl -s -X POST \
 		-d "accept_license_agreement=accepted&submit=Download+software" \
-		-o "/tmp/jlink.deb" \
+		-o "$HOME/jlink.deb" \
 		"https://www.segger.com/downloads/jlink/JLink_Linux_$version.deb"
 
-	apt install -fy "/tmp/jlink.deb"
+	apt install -fy "$HOME/jlink.deb"
 fi
